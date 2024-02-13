@@ -22,15 +22,16 @@ public class ExcelUtility {
 	public XSSFWorkbook workbook;
 	public XSSFSheet sheet;
 	public XSSFRow row;
+	public XSSFRow row1;
 	public XSSFCell cell;
 	public CellStyle style;   
 	String path;
 	
-	public ExcelUtility(String path)
-	{
-		this.path=path;
-	}
-		
+//	public ExcelUtility(String path)
+//	{
+//		this.path=path;
+//	}
+//		
 	public int getRowCount(String sheetName) throws IOException 
 	{
 		fi=new FileInputStream(path);
@@ -77,9 +78,9 @@ public class ExcelUtility {
 		return data;
 	}
 	
-	public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
+	public void setCellData(String path,String sheetName,int rownum,int colnum,String data) throws IOException
 	{
-		File xlfile=new File(path);
+	File xlfile=new File(path);
 		if(!xlfile.exists())    // If file not exists then create new file
 		{
 		workbook=new XSSFWorkbook();
@@ -97,7 +98,7 @@ public class ExcelUtility {
 		if(sheet.getRow(rownum)==null)   // If row not exists then create new Row
 				sheet.createRow(rownum);
 		row=sheet.getRow(rownum);
-		
+
 		cell=row.createCell(colnum);
 		cell.setCellValue(data);
 		fo=new FileOutputStream(path);

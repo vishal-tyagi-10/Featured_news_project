@@ -1,8 +1,12 @@
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\BaseClass\Driver.java
 C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\page_objects\basePage.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\page_objects\clicknews.java
 C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\page_objects\homePage.java
-C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testBase\baseClass.java
-C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_001.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_001_VerifyUserDetail.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_002_newsAndCount.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_003_clickNewsAndValidating.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_004_allapps_and_tools.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\testcases\TC_Combined.java
 C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\utilities\ExcelUtility.java
-C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\utilities\new_excel.java
+C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\utilities\ExtentReportManager.java
 C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\utilities\Reuse.java
-C:\Users\2303764\eclipse-workspace\new_featured_news\src\test\java\utilities\wriring_excel.java

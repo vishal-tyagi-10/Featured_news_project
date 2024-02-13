@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\2303764\eclipse-workspace\new_featured_news\testng.xml</span>
+                    <span>C:\Users\2303764\eclipse-workspace\new_featured_news\TestCasesTesting.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC_001" class="method navigator-link" hash-for-method="Verify_account_details">Verify_account_details</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_001_VerifyUserDetail" class="method navigator-link" hash-for-method="Verify_account_details">Verify_account_details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_005_allapps_and_tools" class="method navigator-link" hash-for-method="apps_tools">apps_tools</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_004_clickNewsAndValidating" class="method navigator-link" hash-for-method="clicking_news">clicking_news</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC_003_newsAndCount" class="method navigator-link" hash-for-method="news_details">news_details</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,7 +137,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_001</span>
+              <span class="class-name">testcases.TC_001_VerifyUserDetail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -134,23 +149,74 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_005_allapps_and_tools</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="apps_tools">
+                  </a> <!-- apps_tools -->
+                  <span class="method-name">apps_tools</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_004_clickNewsAndValidating</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clicking_news">
+                  </a> <!-- clicking_news -->
+                  <span class="method-name">clicking_news</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_003_newsAndCount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="news_details">
+                  </a> <!-- news_details -->
+                  <span class="method-name">news_details</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2303764\eclipse-workspace\new_featured_news\testng.xml</span>
+            <span class="header-content">C:\Users\2303764\eclipse-workspace\new_featured_news\TestCasesTesting.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;chromeTest&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC_001&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_001_VerifyUserDetail&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_003_newsAndCount&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_004_clickNewsAndValidating&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_005_allapps_and_tools&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chromeTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +228,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeTest (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +254,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_account_details')
-data.setCell(0, 2, 'testcases.TC_001')
-data.setCell(0, 3, 13700);
+data.setCell(0, 1, 'clicking_news')
+data.setCell(0, 2, 'testcases.TC_004_clickNewsAndValidating')
+data.setCell(0, 3, 67489);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'news_details')
+data.setCell(1, 2, 'testcases.TC_003_newsAndCount')
+data.setCell(1, 3, 8526);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'apps_tools')
+data.setCell(2, 2, 'testcases.TC_005_allapps_and_tools')
+data.setCell(2, 3, 7771);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Verify_account_details')
+data.setCell(3, 2, 'testcases.TC_001_VerifyUserDetail')
+data.setCell(3, 3, 7452);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,18 +301,63 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC_001_VerifyUserDetail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Verify_account_details</span>
-                <span class="method-start">30578 ms</span>
+                <span class="method-start">10054 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44286 ms</span>
+                <span class="method-start">17543 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_003_newsAndCount</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">18856 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">news_details</span>
+                <span class="method-start">26249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34778 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_004_clickNewsAndValidating</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">35994 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">clicking_news</span>
+                <span class="method-start">43708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">111200 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_005_allapps_and_tools</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">112512 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">apps_tools</span>
+                <span class="method-start">121586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">129359 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
